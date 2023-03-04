@@ -6,18 +6,19 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/herizal95/gomux/config"
-	"github.com/herizal95/gomux/controller/authcontroller"
+	"github.com/herizal95/gomux/routes"
 )
 
 func main() {
 
 	config.ConnectDatabase()
 
-	router := mux.NewRouter()
+	r := mux.NewRouter()
 
-	router.HandleFunc("/login", authcontroller.Login).Methods("POST")
-	router.HandleFunc("/register", authcontroller.Register).Methods("POST")
-	router.HandleFunc("/logout", authcontroller.Logout).Methods("GET")
+	router := r.PathPrefix("/api").Subrouter()
+
+	routes.AuthenticationRouter(router)
+	routes.UserRoutes(router)
 
 	log.Fatal(http.ListenAndServe(":8080", router))
 }

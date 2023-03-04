@@ -80,7 +80,6 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	// login berhasil
 	response := map[string]string{"message": "Login Berhasil"}
 	helper.ResponseJson(w, http.StatusOK, response)
-	return
 
 }
 
@@ -131,6 +130,5 @@ func Logout(w http.ResponseWriter, r *http.Request) {
 	// login berhasil
 	response := map[string]string{"message": "Logout berhasil"}
 	helper.ResponseJson(w, http.StatusOK, response)
-	return
 
 }
