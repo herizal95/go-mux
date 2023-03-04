@@ -5,7 +5,7 @@
 </p>
   <p align="center">
     <a href="https://github.com/herizal95/github-readme-stats/actions">
-      <img alt="Tests Passing" src="https://github.com/herizal95/github-readme-stats/workflows/Test/badge.svg" />
+      <img alt="Tests Passing" src="https://github.com/anuraghazra/github-readme-stats/workflows/Test/badge.svg" />
     </a>
     <a href="https://github.com/herizal95/github-readme-stats/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/herizal95/github-readme-stats" />
@@ -29,17 +29,8 @@
 # go get -u github.com/gorilla/mux
 # go get -u github.com/jinzhu/gorm
 # go get -u github.com/jinzhu/gorm/dialect/postgres
+# go get github.com/golang-jwt/jwt/v5
 ```
 
-> **Note**
-> Available ranks are S+ (top 1%), S (top 25%), A++ (top 45%), A+ (top 60%), and B+ (everyone). The values are calculated by using the [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) using commits, contributions, issues, stars, pull requests, followers, and owned repositories. The implementation can be investigated at [src/calculateRank.js](./src/calculateRank.js).
+### Let's Start
 
-### Hiding individual stats
-
-You can pass a query parameter `&hide=` to hide any specific stats with comma-separated values.
-
-> Options: `&hide=stars,commits,prs,issues,contribs`
-
-```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&hide=contribs,prs)
-```
