@@ -1,7 +1,6 @@
-# CRUD golang with Gorilla-mux
 <p align="center">
  <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">GitHub Readme Stats</h2>
+ <h2 align="center">Golang Authentication with Gorilla Mux</h2>
  <p align="center">Get dynamically generated GitHub stats on your READMEs!</p>
 </p>
   <p align="center">
@@ -21,24 +20,15 @@
       <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/herizal95/github-readme-stats?color=0088ff" />
     </a>
     <br />
-    <br />
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=1227">
-      <img src="https://img.shields.io/badge/Supported%20by-VSCode%20Power%20User%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
-    </a>
-    <a href="https://a.paddle.com/v2/click/16413/119403?link=2345">
-      <img src="https://img.shields.io/badge/Supported%20by-Node%20Cli.com%20%E2%86%92-gray.svg?colorA=61c265&colorB=4CAF50&style=for-the-badge"/>
-    </a>
   </p>
 
 
-# GitHub Stats Card
+### Install Package
 
-Copy-paste this into your markdown content, and that is it. Simple!
-
-Change the `?username=` value to your GitHub username.
-
-```md
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+```
+# go get -u github.com/gorilla/mux
+# go get -u github.com/jinzhu/gorm
+# go get -u github.com/jinzhu/gorm/dialect/postgres
 ```
 
 > **Note**
